@@ -1,0 +1,433 @@
+<!DOCTYPE HTML>
+<!--
+    Dimension by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>TempHelp</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <div class="logo">
+                    <span class="icon fa-handshake"></span>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <h1>"TempHelp"</h1>
+                        <div style="text-align: center; margin-top: 20px;">
+                            <h2>Connect with Experts, Get Business Project Solutions!</h2>
+                            <p>At <strong>"TempHelp"</strong>, we bridge the gap between companies and skilled experts ready to tackle your business projects. Whether you need data management, process optimization, or any specialized task, our platform matches you with the right professionals to get the job done efficiently. Focus on growing your business while we take care of the details.</p>
+                            <p><em>Simplify your workflow with <strong>"TempHelp"</strong> where expertise meets opportunity!</em></p>
+                        </div>
+                    </div>                        
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Intro</a></li>
+                        <li><a href="#work">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact"><strong>Request</strong></a></li>
+                        <!--<li><a href="#elements">Elements</a></li>-->
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Main -->
+            <div id="main">
+    
+                <!-- Intro -->
+                <article id="intro">
+                    <h2 class="major">Introduction</h2>
+                    <span class="image main"><img src="images/Intro.png" alt="" /></span>
+                    <p>Welcome to <strong>TempHelp</strong>, your go-to platform for connecting businesses with skilled experts ready to handle a wide array of finance and Excel-related projects. Our platform is designed to match companies with professionals who specialize in financial analysis, budgeting, forecasting, data analysis, financial reporting, Excel automation, macro creation, spreadsheet management, and more. Whether you need assistance with complex financial modeling or streamlining your data processes, TempHelp provides the expertise you need to enhance your business operations and boost productivity.</p>
+                    <p>At <strong>TempHelp</strong>, we understand the challenges of running a business and the importance of efficiency. Our user-friendly platform makes it easy for companies to find and hire experts who can deliver high-quality results quickly and effectively. By leveraging our network of professionals, you can focus on growing your business while we take care of the details. Experience the convenience and reliability of TempHelp – where finance expertise meets Excel proficiency, and business success is just a click away.</p>
+                </article>
+    
+                <!-- Work -->
+                <article id="work">
+                    <h2 class="major">Projects</h2>
+                    <span class="image main"><img src="images/Workpage.png" alt="" /></span>
+                    <p><strong>Examples of projects that can be requested on the "TempHelp" platform:</strong></p>
+                    <ul>
+                        <li>Financial analysis</li>
+                        <li>Budgeting and forecasting</li>
+                        <li>Financial reporting</li>
+                        <li>Data analysis</li>
+                        <li>Excel automation</li>
+                        <li>Macro creation</li>
+                        <li>Spreadsheet management</li>
+                        <li>Financial modeling</li>
+                        <li>Market research</li>
+                        <li>Process optimization</li>
+                        <li>Project management</li>
+                        <li>Administrative support</li>
+                        <li>Content creation (business reports, presentations)</li>
+                        <li>Data visualization</li>
+                        <li>Dashboard creation</li>
+                    </ul>
+                    <p><strong>** Please be aware that any business-related information provided when requesting projects may be at risk of exposure. We advise clients to minimize the disclosure of confidential business information by focusing their requests solely on the functional aspects of the project. The responsibility for information exposure rests with the client.</strong></p>
+                </article>
+    
+                <!-- About -->
+                <article id="about">
+                    <h2 class="major">About Our Operations</h2>
+                    <span class="image main"><img src="images/Aboutpage.png" alt="" /></span>
+                    <p><strong>TempHelp</strong> is designed for businesses and individuals, including startups, who need assistance with various business functions. Whether you require financial analysis, budgeting, data analysis, Excel automation, market research, or process optimization, our platform connects you with skilled experts who can handle these projects efficiently. Our goal is to help you streamline your operations and focus on growing your business by providing expert support where you need it most.</p>
+                    <p>The process is simple. As a client, you start by requesting a service on the TempHelp platform. You'll need to input your name, email, compensation offer, and a detailed description of your project, including the deadline, topic, and field of request. Once your request is submitted, our network of experts will review it. An expert will get back to you via email to confirm whether the project can be completed. If feasible, they'll provide an estimated time for completion and request any additional information needed to get started.</p>
+                    <p>Once there is mutual understanding between you and the expert, including the compensation payment date and method, and how the project should be submitted, the expert will begin working on your project. Throughout the process, you can communicate back and forth with the expert to ensure all details are clear and the project meets your expectations. After the expert completes the project, it will be submitted to you, and you can finalize the compensation payment. With TempHelp, getting expert support for your business project is seamless and efficient.</p>
+                </article>
+    
+                <!-- Contact -->
+                <article id="contact">
+					<h2 class="major">Project Request</h2>
+					<form id="requestform" action="send_email.php" method="POST">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" required />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" required />
+							</div>
+							<div class="field">
+								<label for="compensation">Compensation</label>
+								<div class="compensation-wrapper">
+									<input type="text" name="compensation" id="compensation" required />
+								</div>
+							</div>
+							<div class="field">
+								<label for="description">Project Description</label>
+								<textarea name="description" id="description" rows="6" required></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Submit Request" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</article>
+				
+				<style>
+					.compensation-wrapper {
+						position: relative;
+					}
+					.compensation-wrapper::before {
+						content: "$";
+						position: absolute;
+						left: 10px;
+						top: 50%;
+						transform: translateY(-50%);
+						pointer-events: none;
+						color: #aaa; /* Adjust color to match other fields */
+					}
+					#compensation {
+						padding-left: 25px; /* Adjust padding to accommodate the dollar sign */
+						color: #fff; /* Adjust color to match other fields */
+						background-color: #2a2a2a; /* Adjust background color to match other fields */
+						border: 1px solid #444; /* Adjust border to match other fields */
+						width: 100%;
+						box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+					}
+				</style>
+				
+				<script>
+					document.getElementById('compensation').addEventListener('input', function (e) {
+						let value = e.target.value;
+				
+						// Remove all characters except digits and the first decimal point
+						value = value.replace(/[^0-9.]/g, '');
+				
+						// Ensure only one decimal point is present
+						const parts = value.split('.');
+						if (parts.length > 2) {
+							parts.pop(); // Remove any extra decimal points
+						}
+				
+						// Format the integer part with commas
+						parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+				
+						// Rejoin the parts with the allowed single decimal point
+						e.target.value = parts.join('.');
+				
+						// Limit decimal places to two
+						if (parts[1] && parts[1].length > 2) {
+							e.target.value = parts[0] + '.' + parts[1].slice(0, 2);
+						}
+					});
+				</script>
+
+                <!-- Elements -->
+                <article id="elements">
+                    <h2 class="major">Elements</h2>
+
+                    <section>
+                        <h3 class="major">Text</h3>
+                        <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+                        This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+                        This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+                        <hr />
+                        <h2>Heading Level 2</h2>
+                        <h3>Heading Level 3</h3>
+                        <h4>Heading Level 4</h4>
+                        <h5>Heading Level 5</h5>
+                        <h6>Heading Level 6</h6>
+                        <hr />
+                        <h4>Blockquote</h4>
+                        <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+                        <h4>Preformatted</h4>
+                        <pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+                    </section>
+
+                    <section>
+                        <h3 class="major">Lists</h3>
+
+                        <h4>Unordered</h4>
+                        <ul>
+                            <li>Dolor pulvinar etiam.</li>
+                            <li>Sagittis adipiscing.</li>
+                            <li>Felis enim feugiat.</li>
+                        </ul>
+
+                        <h4>Alternate</h4>
+                        <ul class="alt">
+                            <li>Dolor pulvinar etiam.</li>
+                            <li>Sagittis adipiscing.</li>
+                            <li>Felis enim feugiat.</li>
+                        </ul>
+
+                        <h4>Ordered</h4>
+                        <ol>
+                            <li>Dolor pulvinar etiam.</li>
+                            <li>Etiam vel felis viverra.</li>
+                            <li>Felis enim feugiat.</li>
+                            <li>Dolor pulvinar etiam.</li>
+                            <li>Etiam vel felis lorem.</li>
+                            <li>Felis enim et feugiat.</li>
+                        </ol>
+                        <h4>Icons</h4>
+                        <ul class="icons">
+                            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                        </ul>
+
+                        <h4>Actions</h4>
+                        <ul class="actions">
+                            <li><a href="#" class="button primary">Default</a></li>
+                            <li><a href="#" class="button">Default</a></li>
+                        </ul>
+                        <ul class="actions stacked">
+                            <li><a href="#" class="button primary">Default</a></li>
+                            <li><a href="#" class="button">Default</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3 class="major">Table</h3>
+                        <h4>Default</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Item One</td>
+                                        <td>Ante turpis integer aliquet porttitor.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Two</td>
+                                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                        <td>19.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Three</td>
+                                        <td> Morbi faucibus arcu accumsan lorem.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Four</td>
+                                        <td>Vitae integer tempus condimentum.</td>
+                                        <td>19.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Five</td>
+                                        <td>Ante turpis integer aliquet porttitor.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td>100.00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <h4>Alternate</h4>
+                        <div class="table-wrapper">
+                            <table class="alt">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Item One</td>
+                                        <td>Ante turpis integer aliquet porttitor.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Two</td>
+                                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                        <td>19.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Three</td>
+                                        <td> Morbi faucibus arcu accumsan lorem.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Four</td>
+                                        <td>Vitae integer tempus condimentum.</td>
+                                        <td>19.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Five</td>
+                                        <td>Ante turpis integer aliquet porttitor.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td>100.00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="major">Buttons</h3>
+                        <ul class="actions">
+                            <li><a href="#" class="button primary">Primary</a></li>
+                            <li><a href="#" class="button">Default</a></li>
+                        </ul>
+                        <ul class="actions">
+                            <li><a href="#" class="button">Default</a></li>
+                            <li><a href="#" class="button small">Small</a></li>
+                        </ul>
+                        <ul class="actions">
+                            <li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+                            <li><a href="#" class="button icon solid fa-download">Icon</a></li>
+                        </ul>
+                        <ul class="actions">
+                            <li><span class="button primary disabled">Disabled</span></li>
+                            <li><span class="button disabled">Disabled</span></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3 class="major">Form</h3>
+                        <form method="post" action="#">
+                            <div class="fields">
+                                <div class="field half">
+                                    <label for="demo-name">Name</label>
+                                    <input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+                                </div>
+                                <div class="field half">
+                                    <label for="demo-email">Email</label>
+                                    <input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+                                </div>
+                                <div class="field">
+                                    <label for="demo-category">Category</label>
+                                    <select name="demo-category" id="demo-category">
+                                        <option value="">-</option>
+                                        <option value="1">Manufacturing</option>
+                                        <option value="1">Shipping</option>
+                                        <option value="1">Administration</option>
+                                        <option value="1">Human Resources</option>
+                                    </select>
+                                </div>
+                                <div class="field half">
+                                    <input type="radio" id="demo-priority-low" name="demo-priority" checked>
+                                    <label for="demo-priority-low">Low</label>
+                                </div>
+                                <div class="field half">
+                                    <input type="radio" id="demo-priority-high" name="demo-priority">
+                                    <label for="demo-priority-high">High</label>
+                                </div>
+                                <div class="field half">
+                                    <input type="checkbox" id="demo-copy" name="demo-copy">
+                                    <label for="demo-copy">Email me a copy</label>
+                                </div>
+                                <div class="field half">
+                                    <input type="checkbox" id="demo-human" name="demo-human" checked>
+                                    <label for="demo-human">Not a robot</label>
+                                </div>
+                                <div class="field">
+                                    <label for="demo-message">Message</label>
+                                    <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><input type="submit" value="Send Message" class="primary" /></li>
+                                <li><input type="reset" value="Reset" /></li>
+                            </ul>
+                        </form>
+                    </section>
+
+                </article>
+
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <p class="copyright">&copy; TempHelp</p>
+            </footer>
+
+        </div>
+
+        <!-- BG -->
+        <div id="bg"></div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

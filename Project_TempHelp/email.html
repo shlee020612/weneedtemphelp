@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <style>
+        .compensation-wrapper {
+            position: relative;
+        }
+        .compensation-wrapper::before {
+            content: "$";
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #fff;
+        }
+        #compensation {
+            padding-left: 20px;
+            color: #fff;
+            background-color: #333;
+            border: 1px solid #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact -->
+    <article id="contact">
+        <h2 class="major">Request</h2>
+        <form method="post" action="send_email.php">
+            <div class="fields">
+                <div class="field half">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required />
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div class="field">
+                    <label for="compensation">Compensation</label>
+                    <div class="compensation-wrapper">
+                        <input type="text" name="compensation" id="compensation" oninput="formatCompensation(this)" required />
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="message">Project Details</label>
+                    <textarea name="message" id="message" rows="4" required></textarea>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" class="primary" /></li>
+                <li><input type="reset" value="Reset" /></li>
+            </ul>
+        </form>
+    </article>
+
+    <script>
+        function formatCompensation(input) {
+            // Remove non-numeric characters except for periods
+            let value = input.value.replace(/[^0-9.]/g, '');
+            
+            // Ensure only one period is present
+            if (value.split('.').length > 2) value = value.replace(/\.+$/, '');
+            
+            // Limit to two decimal places
+            let parts = value.split('.');
+            if (parts.length > 1) {
+                parts[1] = parts[1].slice(0, 2);
+                value = parts[0] + '.' + parts[1];
+            }
+            
+            // Add thousand separators
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            input.value = parts.join('.');
+        }
+    </script>
+</body>
+</html>
